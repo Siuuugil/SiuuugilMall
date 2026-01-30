@@ -1,0 +1,104 @@
+/* 전역 초기화 및 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+KR:wght@300;500;700&display=swap');
+
+.main-wrapper {
+  font-family: 'Noto Sans KR', 'Montserrat', sans-serif;
+  color: #1a1a1a;
+  background-color: #fff;
+}
+
+/* 상단 네비게이션 */
+.top-nav {
+  height: 80px;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 1000;
+}
+.nav-inner {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+.nav-logo { font-family: 'Montserrat'; font-weight: 700; font-size: 26px; letter-spacing: 2px; }
+.nav-menu { display: flex; list-style: none; gap: 40px; font-weight: 500; font-size: 14px; }
+.nav-menu li { cursor: pointer; transition: 0.2s; }
+.nav-menu li:hover { color: #888; }
+
+/* 메인 추천 슬라이드 */
+.main-hero { margin-bottom: 80px; }
+.hero-slide-item {
+  display: flex;
+  height: 600px;
+  background-color: #f9f9f9;
+  align-items: center;
+}
+.hero-img-box { flex: 1.2; height: 100%; overflow: hidden; }
+.hero-img-box img { width: 100%; height: 100%; object-fit: cover; }
+.hero-text-box { flex: 1; padding-left: 80px; }
+.category-tag { font-family: 'Montserrat'; color: #888; letter-spacing: 3px; font-size: 13px; }
+.hero-text-box h2 { font-size: 42px; margin: 15px 0; font-weight: 700; }
+.btn-shop {
+  margin-top: 30px;
+  padding: 12px 40px;
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-shop:hover { background: #444; }
+
+/* 섹션 공통 */
+.content-section { max-width: 1400px; margin: 0 auto 100px; padding: 0 40px; }
+.section-header { text-align: center; margin-bottom: 50px; }
+.section-header h3 { font-size: 24px; letter-spacing: 1px; margin-bottom: 10px; }
+.section-header p { color: #888; font-size: 15px; }
+
+/* 상품 그리드 */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 20px;
+}
+.product-card { cursor: pointer; position: relative; }
+.product-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  background: #f4f4f4;
+  aspect-ratio: 3.5 / 4.5;
+}
+.product-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.product-card:hover .product-img-wrapper img { transform: scale(1.08); }
+
+/* 호버 시 아이콘 노출 */
+.overlay-icons {
+  position: absolute;
+  bottom: -50px; left: 0; width: 100%;
+  height: 50px; background: rgba(255,255,255,0.9);
+  display: flex; justify-content: space-around; align-items: center;
+  transition: 0.3s;
+}
+.product-card:hover .overlay-icons { bottom: 0; }
+
+/* 배지 */
+.badge {
+  position: absolute; top: 15px; left: 15px;
+  background: #ff5a5a; color: #fff; padding: 4px 10px;
+  font-size: 11px; font-weight: 700; z-index: 10;
+}
+
+.product-desc { padding: 20px 0; text-align: center; }
+.p-name { font-size: 15px; margin-bottom: 8px; font-weight: 500; color: #333; }
+.p-price { font-size: 16px; font-weight: 700; color: #1a1a1a; }

@@ -1,0 +1,15 @@
+.login-page {
+    padding: 24px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .login-form {
+    display: grid;
+    gap: 10px;
+    max-width: 320px;
+  }
+  
+  .login-form input, .login-form button {
+    padding: 10px;
+  }
+  
