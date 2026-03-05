@@ -41,3 +41,6 @@ dist/
 .env
 *.log
 .idea/
+
+# 보안 파일 숨기기
+src/main/resources/application.properties
