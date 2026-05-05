@@ -32,7 +32,7 @@ const MainPage = () => {
     ];
     // 일반 상품 목록
     const dummyProducts = [
-      { id: 1, name: "오로라 시그니처 핸드워시", price: "20,000", img: "/handsope.png", tag: "NEW" },
+      { id: 1, name: "여기를 수정해볼게요!", price: "20,000", img: "/handsope.png", tag: "NEW" },
       { id: 2, name: "내추럴 린넨 오버핏 셔츠", price: "59,000", img: "/B.png", tag: "BEST" },
       { id: 3, name: "클래식 울 슬랙스", price: "68,000", img: "/c.png", tag: "" },
       { id: 4, name: "세라믹 핸드메이드 머그", price: "32,000", img: "/f.png", tag: "" },
